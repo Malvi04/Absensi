@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../hover.css">
+    <title>Guru</title>
+</head>
+
+<body>
+    <div class="d-flex flex-column position-fixed" style="background-color : #d4d4d4">
+        <!-- SIDEBAR -->
+        <div class="d-flex justify-content-start">
+            <div class="sidebar col-3 vh-100 overflow-scroll" style="background-color :#0F2443;">
+                <!-- Isi Sidebar -->
+                <!-- IMAGE -->
+                <div class="container-fluid">
+
+                    <div class="nav-brand d-flex justify-content-center pb-3">
+                        <span class="border-bottom border-light w-75">
+                            <center>
+                                <img src="../Logo CN.png" class="w-50 mt-5 pb-3 img-fluid" alt="...">
+                            </center>
+                        </span>
+                    </div>
+                </div>
+                <!-- Dashboard - Mapel -->
+                <div class="container-fluid" style="font-family: 'Lato', sans-serif;">
+
+                    <ul class="navbar-nav mt-4">
+                        <!-- LIST KONTEN -->
+                        <div class="kontenside">
+                            <div class="container">
+                            <div class="d-flex justify-content-start ms-4">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="../Dashboard/dashboard.html">
+                                            <div
+                                                class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                                                <i class="bi bi-house-fill fs-4"></i>
+                                                <span class="nav-link-text ms-1 ms-5 mt-1">Dashboard</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="container">
+
+                            
+                            <div class="d-flex justify-content-start ms-4">
+
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="./pages/tables.html">
+                                        <div
+                                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-person-fill fs-4"></i>
+                                            <span class="nav-link-text ms-1 ms-5 mt-1">Murid</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </div>
+                            </div>
+
+                            <div class="container">
+                            <div class="d-flex justify-content-start ms-4">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="view.html">
+                                        <div
+                                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-person-fill fs-4"></i>
+                                            <span class="nav-link-text ms-1 ms-5 mt-1">Guru</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </div>
+                            </div>
+                            <div class="container">
+                            <div class="d-flex justify-content-start ms-4">
+
+                                <li class="nav-item">
+                                    <a class="nav-link " href="./pages/virtual-reality.html">
+                                        <div
+                                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-book-fill fs-4"></i>
+                                            <span class="nav-link-text ms-1 ms-5 mt-1">Mapel</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </div>
+                            </div>
+                            <div class="container">
+                            <div class="d-flex justify-content-start ms-4">
+
+                                <li class="nav-item">
+                                    <a class="nav-link " href="./pages/virtual-reality.html">
+                                        <div
+                                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-person-fill fs-4"></i>
+                                            <span class="nav-link-text ms-1 ms-5 mt-1">Users</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid mt-5 pt-3">
+                            <div class="d-flex justify-content-center">
+                                <span class="border-top border-light mt-5 w-75">
+                                    <a class="nav-link pt-4" data-bs-toggle="modal" data-bs-target="#logoutModal" href="./pages/virtual-reality.html">
+                                        <div class="kontenside">
+                                            <div
+                                                class="icon icon-shape icon-sm border-radius-md text-center me-5  d-flex align-items-center justify-content-center">
+                                                <i class="bi bi-box-arrow-left fs-4"></i>
+                                                <span class="nav-link-text ms-1 ms-5">Log Out</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- TUTUP SIDEBAR -->
+
+            <div class="content d-flex justify-content-center align-items-start w-100"
+                style="background-color : #d4d4d4">
+                <!-- isi konten -->
+                <!-- Ini Untuk Navbar -->
+                <div class="container">
+
+                    <!-- Ini Komponen navbar -->
+                    <nav class="navbar navbar-expand-lg navbar-light" style="background-color : #091527">
+                        <div class="container">
+                            <a class="navbar-brand text-light py-2 ms-3 fs-4"
+                                style="font-family: 'Poppins', sans-serif;">Guru</a>
+                        </div>
+                    </nav>
+                    <!-- Tutup Navbar -->
+
+                    <!-- Isi Cards -->
+                    <div class="content d-flex justify-content-center align-items-start">
+                        <div class="container-fluid">
+                            <div class="card mt-4 shadow-lg" style="max-height: 550px;">
+                                <div class="card-body overflow-auto">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <th class="text-center" style="font-family: 'Poppins', sans-serif;">Id</th>
+                                            <th class="text-center" style="font-family: 'Poppins', sans-serif;">Nama
+                                                Lengkap</th>
+                                            <th class="text-center" style="font-family: 'Poppins', sans-serif;">Detail
+                                            </th>
+                                            <th class="text-center" style="font-family: 'Poppins', sans-serif;">Aksi
+                                            </th>
+                                            <th class="text-end"><button type="button"
+                                                    class="btn btn-sm btn-primary w-75" data-bs-toggle="modal"
+                                                    data-bs-target="#tambahguruModal"
+                                                    style="font-family: 'Poppins', sans-serif;">Tambah Guru</button>
+                                            </th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-center" style="font-family: 'Lato', sans-serif;">1234
+                                                </td>
+                                                <td class="text-center" style="font-family: 'Lato', sans-serif;">Sutan
+                                                    Pangeran Arya Dewa
+                                                </td>
+                                                <td class="text-center">
+
+                                                    <button type="button" class="btn btn-sm btn-primary w-50"
+                                                        style="font-family: 'Poppins', sans-serif;"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#cekdataModal">Cek</button>
+
+                                                </td>
+                                                <td class="text-center">
+                                                    <button class="btn btn-sm btn-primary w-25" data-bs-toggle="modal" data-bs-target="#ubahModal">
+                                                        <i class="bi bi-pencil-fill"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-danger w-25" data-bs-toggle="modal" data-bs-target="#hapusModal">
+                                                        <i class="bi bi-trash-fill"></i>
+                                                    </button>
+                                                </td>
+                                                <td class="text-center"></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <div class="d-flex justify-content-start">
+                                        <button type="button" class="btn btn-sm btn-warning text-light px-4"
+                                            style="font-family: 'Poppins', sans-serif;">PDF</button>
+                                        <button type="button" class="btn btn-sm btn-success ms-3 px-4"
+                                            style="font-family: 'Poppins', sans-serif;">EXCEL</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- BAGIAN TAMBAH GURU -->
+    <!-- Modal -->
+    <div class="modal fade" id="tambahguruModal" tabindex="1" aria-labelledby="tambahguruLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-xxl-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-4" id="tambahguruLabel" style="font-family: 'Poppins', sans-serif;">
+                        Tambah Guru</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Nama Lengkap" aria-label="Username"
+                            aria-describedby="basic-addon1" style="font-family: 'Lato', sans-serif;">
+                    </div>
+                    <div class="d-flex my-2">
+                        <div class="form-check" style="font-family: 'Lato', sans-serif;">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                <span class="me-3">L</span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                <span>P</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div style="font-family: 'Lato', sans-serif;">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Nip" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="No Telepon" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Email" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Mata Pelajaran" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group">
+                            <input type="file" class="form-control" id="inputGroupFile04"
+                                aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                        </div>
+                        <div class="d-flex my-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    <span class="me-3">Guru tersebut adalah wali kelas</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-sm btn-secondary dropdown-toggle mb-3 w-25" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pilih Kelas
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">11 Rpl 1</a></li>
+                                <li><a class="dropdown-item" href="#">11 Rpl 2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div style="font-family: 'Poppins', sans-serif;">
+                            <button type="button" class="btn btn-primary">Tambah Guru</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- BAGIAN CEK DETAIL GURU -->
+    <!-- Modal -->
+    <div class="modal fade" id="cekdataModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header" style="font-family: 'Poppins', sans-serif;">
+                    <h1 class="modal-title fs-3 ms-3" id="exampleModalLabel">Detail Guru</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="ms-3" style="font-family: 'Lato', sans-serif;">
+                                    <div class="d-flex justify-content-start align-items-center pt-5 mt-4">
+                                        <p class="fs-5">Nama Lengkap : Sutan Pangeran Arya Dewa</p>
+                                    </div>
+                                    <div class="d-flex justify-content-start align-items-center">
+                                        <p class="fs-5">Jenis Kelamin : Laki-Laki</p>
+                                    </div>
+                                    <div class="d-flex justify-content-start align-items-center">
+                                        <p class="fs-5">No Telepon: 72583502570</p>
+                                    </div>
+                                    <div class="d-flex justify-content-start align-items-center">
+                                        <p class="fs-5">Email : MyFellasInDahood@gmail.com</p>
+                                    </div>
+                                    <div class="d-flex justify-content-start align-items-center">
+                                        <p class="fs-5">Mata Pelajaran : Pemodelan Perangkat Lunak</p>
+                                    </div>
+                                    <div class="d-flex justify-content-start align-items-center">
+                                        <p class="fs-5">Kelas : 11 RPL 1</p>
+                                    </div>
+                                    <div class="d-flex justify-content-start align-items-center">
+                                        <p class="fs-5">Wali Kelas</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 col">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="../Maggot.jpeg" style="max-width: 450px; height: 525px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL PERINGATAN LOG OUT -->
+<!-- Modal -->
+<div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" style="font-family: 'Poppins', sans-serif;">Peringatan</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="font-family: 'Lato', sans-serif;">
+          Yakin ingin keluar?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="font-family: 'Poppins', sans-serif;">Tidak</button>
+          <button type="button" class="btn btn-primary" style="font-family: 'Poppins', sans-serif;">iya</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- BAGIAN UBAH GURU -->
+    <!-- Modal -->
+    <div class="modal fade" id="ubahModal" tabindex="1" aria-labelledby="tambahguruLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-xxl-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-4" id="tambahguruLabel" style="font-family: 'Poppins', sans-serif;">
+                        Ubah Detail</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Nama Lengkap" aria-label="Username"
+                            aria-describedby="basic-addon1" style="font-family: 'Lato', sans-serif;">
+                    </div>
+                    <div class="d-flex my-2">
+                        <div class="form-check" style="font-family: 'Lato', sans-serif;">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                <span class="me-3">L</span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                <span>P</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div style="font-family: 'Lato', sans-serif;">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Nip" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="No Telepon" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Email" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Mata Pelajaran" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group">
+                            <input type="file" class="form-control" id="inputGroupFile04"
+                                aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                        </div>
+                        <div class="d-flex my-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    <span class="me-3">Guru tersebut adalah wali kelas</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-sm btn-secondary dropdown-toggle mb-3 w-25" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pilih Kelas
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">11 Rpl 1</a></li>
+                                <li><a class="dropdown-item" href="#">11 Rpl 2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div style="font-family: 'Poppins', sans-serif;">
+                            <button type="button" class="btn btn-primary">Ubah</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- MODAL PERINGATAN HAPUS GURU -->
+<!-- Modal -->
+<div class="modal fade" id="hapusModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" style="font-family: 'Poppins', sans-serif;">Peringatan</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="font-family: 'Lato', sans-serif;">
+          Hapus Data Sutan Pangeran Arya Dewa?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="font-family: 'Poppins', sans-serif;">Tidak</button>
+          <button type="button" class="btn btn-primary" style="font-family: 'Poppins', sans-serif;">iya</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+</html>

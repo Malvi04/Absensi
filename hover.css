@@ -1,0 +1,12 @@
+.kontenside{
+    color: white;
+}
+
+.kontenside :hover{
+    background-color: aliceblue;
+    border-radius: 10px;
+    transition: 0.3s;
+    color: black;
+    cursor: pointer;
+    height: 50%;
+}
