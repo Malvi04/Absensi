@@ -1,0 +1,25 @@
+.header img {
+  padding-left: 20px;
+}
+
+.left p {
+  font-size: 80px;
+  font-weight: bold;
+  padding-left: 85px;
+}
+
+.form {
+  padding-top: 50px;
+}
+
+.form h3 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.form button {
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
