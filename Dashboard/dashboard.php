@@ -1,3 +1,14 @@
+<?php
+session_start();
+if (empty($_SESSION['username']) or empty($_SESSION['role'])) {
+  echo "<script>
+            alert('silahkan login terlebih dahulu');
+            window.location='../index.php';
+        </script>";
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -121,7 +132,7 @@
                 <div class="d-flex justify-content-start ms-4">
 
                   <li class="nav-item">
-                    <a class="nav-link active" href="../Users/users.html">
+                    <a class="nav-link active" href="../Users/users.php">
                       <div
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <div class="d-flex align-items-center">
@@ -302,7 +313,7 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
             style="font-family: 'Poppins', sans-serif;">Tidak</button>
-            <a href="../index.html">
+            <a href="../index.php">
               <button type="button" class="btn btn-primary" style="font-family: 'Poppins', sans-serif;">iya</button>
             </a>
         </div>

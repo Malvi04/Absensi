@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,8 +43,7 @@
 
                   <li class="nav-item">
                     <a class="nav-link active" href="../Dashboard/dashboard.html">
-                      <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                      <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <div class="d-flex">
                           <span class="bi bi-house-fill fs-6"></span>
                           <span class="nav-link-text ms-5 fs-6">Dashboard</span>
@@ -62,8 +60,7 @@
 
                   <li class="nav-item">
                     <a class="nav-link active" href="../Murid/view.html">
-                      <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                      <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <div class="d-flex align-items-center">
                           <span class="bi bi-person-fill fs-6"></span>
                           <span class="nav-link-text ms-5 fs-6">Murid</span>
@@ -79,8 +76,7 @@
 
                   <li class="nav-item">
                     <a class="nav-link active" href="view.html">
-                      <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                      <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <div class="d-flex align-items-center">
                           <span class="bi bi-person-fill fs-6"></span>
                           <span class="nav-link-text ms-5 fs-6">Guru</span>
@@ -96,8 +92,7 @@
 
                   <li class="nav-item">
                     <a class="nav-link active" href="../Mapel/view.html">
-                      <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                      <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <div class="d-flex align-items-center">
                           <span class="bi bi-book-half fs-6"></span>
                           <span class="nav-link-text ms-5 fs-6">Mapel</span>
@@ -113,8 +108,7 @@
 
                   <li class="nav-item">
                     <a class="nav-link active" href="../Users/users.html">
-                      <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                      <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <div class="d-flex align-items-center">
                           <span class="bi bi-person-fill-add fs-6"></span>
                           <span class="nav-link-text ms-5 fs-6">Users</span>
@@ -135,8 +129,7 @@
 
                   <li class="nav-item">
                     <a class="nav-link active" href="" data-bs-toggle="modal" data-bs-target="#logoutModal">
-                      <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                      <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <div class="d-flex align-items-center">
                           <span class="bi bi-box-arrow-left fs-6"></span>
                           <span class="nav-link-text ms-5 fs-6">Log Out</span>
@@ -180,9 +173,7 @@
                       </th>
                       <th class="text-center" style="font-family: 'Poppins', sans-serif;">Aksi
                       </th>
-                      <th class="text-end"><button type="button" class="btn btn-sm btn-primary rounded-circle"
-                          data-bs-toggle="modal" data-bs-target="#tambahguruModal"><i
-                            class="bi bi-plus-lg"></i></button>
+                      <th class="text-end"><button type="button" class="btn btn-sm btn-primary rounded-circle" data-bs-toggle="modal" data-bs-target="#tambahguruModal"><i class="bi bi-plus-lg"></i></button>
                       </th>
                     </thead>
                     <tbody>
@@ -194,18 +185,14 @@
                         </td>
                         <td class="text-center">
 
-                          <button type="button" class="btn btn-sm btn-primary w-50"
-                            style="font-family: 'Poppins', sans-serif;" data-bs-toggle="modal"
-                            data-bs-target="#cekdataModal">Cek</button>
+                          <button type="button" class="btn btn-sm btn-primary w-50" style="font-family: 'Poppins', sans-serif;" data-bs-toggle="modal" data-bs-target="#cekdataModal">Cek</button>
 
                         </td>
                         <td class="text-center">
-                          <button class="btn btn-sm btn-primary w-25" data-bs-toggle="modal"
-                            data-bs-target="#ubahModal">
+                          <button class="btn btn-sm btn-primary w-25" data-bs-toggle="modal" data-bs-target="#ubahModal">
                             <i class="bi bi-pencil-fill"></i>
                           </button>
-                          <button class="btn btn-sm btn-danger w-25" data-bs-toggle="modal"
-                            data-bs-target="#hapusModal">
+                          <button class="btn btn-sm btn-danger w-25" data-bs-toggle="modal" data-bs-target="#hapusModal">
                             <i class="bi bi-trash-fill"></i>
                           </button>
                         </td>
@@ -215,10 +202,8 @@
                     </tbody>
                   </table>
                   <div class="d-flex justify-content-start">
-                    <button type="button" class="btn btn-sm btn-warning text-light px-4"
-                      style="font-family: 'Poppins', sans-serif;">PDF</button>
-                    <button type="button" class="btn btn-sm btn-success ms-3 px-4"
-                      style="font-family: 'Poppins', sans-serif;">EXCEL</button>
+                    <button type="button" class="btn btn-sm btn-warning text-light px-4" style="font-family: 'Poppins', sans-serif;">PDF</button>
+                    <button type="button" class="btn btn-sm btn-success ms-3 px-4" style="font-family: 'Poppins', sans-serif;">EXCEL</button>
 
                   </div>
                 </div>
@@ -244,8 +229,7 @@
         <div class="modal-body">
           <form action="" method="get">
             <div class="input-group mb-3">
-              <input type="text" name="" class="form-control" placeholder="Nama Lengkap" aria-label="Username"
-                aria-describedby="basic-addon1" style="font-family: 'Lato', sans-serif;">
+              <input type="text" name="" class="form-control" placeholder="Nama Lengkap" aria-label="Username" aria-describedby="basic-addon1" style="font-family: 'Lato', sans-serif;">
             </div>
             <div class="d-flex my-2">
               <div class="form-check" style="font-family: 'Lato', sans-serif;">
@@ -263,24 +247,19 @@
             </div>
             <div style="font-family: 'Lato', sans-serif;">
               <div class="input-group mb-3">
-                <input type="text" name="" class="form-control" placeholder="Nip" aria-label="Username"
-                  aria-describedby="basic-addon1">
+                <input type="text" name="" class="form-control" placeholder="Nip" aria-label="Username" aria-describedby="basic-addon1">
               </div>
               <div class="input-group mb-3">
-                <input type="text" name="" class="form-control" placeholder="No Telepon" aria-label="Username"
-                  aria-describedby="basic-addon1">
+                <input type="text" name="" class="form-control" placeholder="No Telepon" aria-label="Username" aria-describedby="basic-addon1">
               </div>
               <div class="input-group mb-3">
-                <input type="text" name="" class="form-control" placeholder="Email" aria-label="Username"
-                  aria-describedby="basic-addon1">
+                <input type="text" name="" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
               </div>
               <div class="input-group mb-3">
-                <input type="text" name="" class="form-control" placeholder="Mata Pelajaran" aria-label="Username"
-                  aria-describedby="basic-addon1">
+                <input type="text" name="" class="form-control" placeholder="Mata Pelajaran" aria-label="Username" aria-describedby="basic-addon1">
               </div>
               <div class="input-group">
-                <input type="file" name="" class="form-control" id="inputGroupFile04"
-                  aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                <input type="file" name="" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
               </div>
               <div class="d-flex my-2">
                 <div class="form-check">
@@ -291,8 +270,7 @@
                 </div>
               </div>
               <div class="dropdown">
-                <button class="btn btn-sm btn-secondary dropdown-toggle mb-3 w-25" type="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn btn-sm btn-secondary dropdown-toggle mb-3 w-25" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Pilih Kelas
                 </button>
                 <ul class="dropdown-menu">
@@ -381,8 +359,7 @@
           Yakin ingin keluar?
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-            style="font-family: 'Poppins', sans-serif;">Tidak</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="font-family: 'Poppins', sans-serif;">Tidak</button>
           <a href="../index.html">
             <button type="button" class="btn btn-primary" style="font-family: 'Poppins', sans-serif;">iya</button>
           </a>
@@ -404,8 +381,7 @@
         <div class="modal-body">
           <form action="" method="get">
             <div class="input-group mb-3">
-              <input type="text" name="" class="form-control" placeholder="Nama Lengkap" aria-label="Username"
-                aria-describedby="basic-addon1" style="font-family: 'Lato', sans-serif;">
+              <input type="text" name="" class="form-control" placeholder="Nama Lengkap" aria-label="Username" aria-describedby="basic-addon1" style="font-family: 'Lato', sans-serif;">
             </div>
             <div class="d-flex my-2">
               <div class="form-check" style="font-family: 'Lato', sans-serif;">
@@ -423,24 +399,19 @@
             </div>
             <div style="font-family: 'Lato', sans-serif;">
               <div class="input-group mb-3">
-                <input type="text" name="" class="form-control" placeholder="Nip" aria-label="Username"
-                  aria-describedby="basic-addon1">
+                <input type="text" name="" class="form-control" placeholder="Nip" aria-label="Username" aria-describedby="basic-addon1">
               </div>
               <div class="input-group mb-3">
-                <input type="text" name="" class="form-control" placeholder="No Telepon" aria-label="Username"
-                  aria-describedby="basic-addon1">
+                <input type="text" name="" class="form-control" placeholder="No Telepon" aria-label="Username" aria-describedby="basic-addon1">
               </div>
               <div class="input-group mb-3">
-                <input type="text" name="" class="form-control" placeholder="Email" aria-label="Username"
-                  aria-describedby="basic-addon1">
+                <input type="text" name="" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
               </div>
               <div class="input-group mb-3">
-                <input type="text" name="" class="form-control" placeholder="Mata Pelajaran" aria-label="Username"
-                  aria-describedby="basic-addon1">
+                <input type="text" name="" class="form-control" placeholder="Mata Pelajaran" aria-label="Username" aria-describedby="basic-addon1">
               </div>
               <div class="input-group">
-                <input type="file" name="" class="form-control" id="inputGroupFile04"
-                  aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                <input type="file" name="" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
               </div>
               <div class="d-flex my-2">
                 <div class="form-check">
@@ -451,8 +422,7 @@
                 </div>
               </div>
               <div class="dropdown">
-                <button class="btn btn-sm btn-secondary dropdown-toggle mb-3 w-25" name="" type="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn btn-sm btn-secondary dropdown-toggle mb-3 w-25" name="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Pilih Kelas
                 </button>
                 <ul class="dropdown-menu">
@@ -487,8 +457,7 @@
           Hapus Data Sutan Pangeran Arya Dewa?
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-            style="font-family: 'Poppins', sans-serif;">Tidak</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="font-family: 'Poppins', sans-serif;">Tidak</button>
           <a href="">
             <button type="submit" class="btn btn-primary" style="font-family: 'Poppins', sans-serif;">iya</button>
           </a>
@@ -498,7 +467,6 @@
   </div>
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
 </html>

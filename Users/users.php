@@ -5,8 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,9 +45,8 @@
                 <div class="d-flex justify-content-start ms-4">
 
                   <li class="nav-item">
-                    <a class="nav-link active" href="../Dashboard/dashboard.html">
-                      <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                    <a class="nav-link active" href="../Dashboard/dashboard.php">
+                      <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <div class="d-flex">
                           <span class="bi bi-house-fill fs-6"></span>
                           <span class="nav-link-text ms-5 fs-6">Dashboard</span>
@@ -64,9 +62,8 @@
                 <div class="d-flex justify-content-start ms-4">
 
                   <li class="nav-item">
-                    <a class="nav-link active" href="../Murid/view.html">
-                      <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                    <a class="nav-link active" href="../Murid/view.php">
+                      <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <div class="d-flex align-items-center">
                           <span class="bi bi-person-fill fs-6"></span>
                           <span class="nav-link-text ms-5 fs-6">Murid</span>
@@ -81,9 +78,8 @@
                 <div class="d-flex justify-content-start ms-4">
 
                   <li class="nav-item">
-                    <a class="nav-link active" href="../Guru/view.html">
-                      <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                    <a class="nav-link active" href="../Guru/view.php">
+                      <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <div class="d-flex align-items-center">
                           <span class="bi bi-person-fill fs-6"></span>
                           <span class="nav-link-text ms-5 fs-6">Guru</span>
@@ -98,9 +94,8 @@
                 <div class="d-flex justify-content-start ms-4">
 
                   <li class="nav-item">
-                    <a class="nav-link active" href="../Mapel/view.html">
-                      <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                    <a class="nav-link active" href="../Mapel/view.php">
+                      <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <div class="d-flex align-items-center">
                           <span class="bi bi-book-half fs-6"></span>
                           <span class="nav-link-text ms-5 fs-6">Mapel</span>
@@ -115,9 +110,8 @@
                 <div class="d-flex justify-content-start ms-4">
 
                   <li class="nav-item">
-                    <a class="nav-link active" href="users.html">
-                      <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                    <a class="nav-link active" href="users.php">
+                      <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <div class="d-flex align-items-center">
                           <span class="bi bi-person-fill-add fs-6"></span>
                           <span class="nav-link-text ms-5 fs-6">Users</span>
@@ -138,8 +132,7 @@
 
                   <li class="nav-item">
                     <a class="nav-link active" href="" data-bs-toggle="modal" data-bs-target="#logoutModal">
-                      <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                      <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <div class="d-flex align-items-center">
                           <span class="bi bi-box-arrow-left fs-6"></span>
                           <span class="nav-link-text ms-5 fs-6">Log Out</span>
@@ -175,66 +168,51 @@
               <div class="container-fluid p-3">
                 <div class="d-flex justify-content-between container">
                   <h2 style="font-family: 'Poppins', sans-serif">Data Users</h2>
-                  <button type="button" class="btn btn-md btn-primary ms-4 h-25 rounded-circle" data-bs-toggle="modal"
-                    data-bs-target="#tambahuserModal">
+                  <button type="button" class="btn btn-md btn-primary ms-4 h-25 rounded-circle" data-bs-toggle="modal" data-bs-target="#tambahuserModal">
                     <i class="bi bi-plus-lg"></i>
                   </button>
                 </div>
 
                 <!-- Cards Users -->
+                <?php
+                // menghubungan ke database
+                $koneksi = mysqli_connect('localhost', 'root', '', 'absensi_sekolah');
 
-                <div class="row mt-5">
-                  <div class="col-6">
-                    <div class="card shadow-lg h-75" style="background-color: #091527">
-                      <div class="card-body mb-5">
-                        <div class="row p-3">
-                          <div class="col-6">
-                            <div class="d-flex justify-content-center">
-                              <div class="mb-3">
-                                <img src="../img/Maggot.jpeg" style="height: 130px; width: 140px;" alt=""
-                                  class="bg-light text-center rounded">
+                $no = 1;
+                $query = "SELECT * FROM users";
+                $hasil = mysqli_query($koneksi, $query);
+                while ($data = mysqli_fetch_array($hasil)) {
+                ?>
+                  <div class="row mt-5">
+                    <center>
+                      <div class="col-6">
+                        <div class="card shadow-lg h-75" style="background-color: #091527">
+                          <div class="card-body mb-5">
+                            <div class="row p-3">
+                              <div class="col-6">
+                                <div class="d-flex justify-content-center">
+                                  <div class="mb-3">
+                                  </div>
+                                </div>
                               </div>
+                              <center>
+                                <div class="col-6">
+                                  <h5 class="text-center text-light" style="font-family: 'Lato', sans-serif;"><?= $data['nama_lengkap'] ?>
+                                  </h5>
+
+                                  <button type="button" class="btn btn-sm btn-primary w-75 mt-2" data-bs-toggle="modal" data-bs-target="#cekdataModal" style="font-family: 'Poppins', sans-serif">Lihat
+                                    Detail</button>
+
+                                </div>
+                              </center>
                             </div>
-                          </div>
-                          <div class="col-6">
-                            <h5 class="text-center text-light" style="font-family: 'Lato', sans-serif;">Quandle Dingle
-                            </h5>
-                            <center>
-                              <button type="button" class="btn btn-sm btn-primary w-75 mt-2" data-bs-toggle="modal"
-                                data-bs-target="#cekdataModal" style="font-family: 'Poppins', sans-serif">Lihat
-                                Detail</button>
-                            </center>
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </center>
                   </div>
-                  <div class="col-6">
-                    <div class="card shadow-lg h-75" style="background-color: #091527">
-                      <div class="card-body mb-5">
-                        <div class="row p-3">
-                          <div class="col-6">
-                            <div class="d-flex justify-content-center">
-                              <div class="mb-3">
-                                <img src="../img/Maggot.jpeg" style="height: 130px; width: 140px;" alt=""
-                                  class="bg-light text-center rounded">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-6">
-                            <h5 class="text-center text-light" style="font-family: 'Lato', sans-serif;">Quandle Dingle
-                            </h5>
-                            <center>
-                              <button type="button" class="btn btn-sm btn-primary w-75 mt-2" data-bs-toggle="modal"
-                                data-bs-target="#cekdataModal" style="font-family: 'Poppins', sans-serif">Lihat
-                                Detail</button>
-                            </center>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <?php $no++;
+                } ?>
 
 
 
@@ -261,28 +239,35 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-8">
-                <div class="ms-3" style="font-family: 'Lato', sans-serif">
-                  <div class="d-flex justify-content-start align-items-center pt-5 mt-4">
-                    <p class="fs-5">Id : 1</p>
+                <?php
+                // menghubungan ke database
+                $koneksi = mysqli_connect('localhost', 'root', '', 'absensi_sekolah');
+
+                $no = 1;
+                $query = "SELECT * FROM users";
+                $hasil = mysqli_query($koneksi, $query);
+                while ($data = mysqli_fetch_array($hasil)) {
+                ?>
+                  <div class="ms-3" style="font-family: 'Lato', sans-serif">
+                    <div class="d-flex justify-content-start align-items-center pt-5 mt-4">
+                      <p class="fs-5"><?= $no; ?></p>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-center">
+                      <p class="fs-5">Nama Lengkap :<?= $data['nama_lengkap'] ?></p>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-center">
+                      <p class="fs-5">Username : <?= $data['username'] ?></p>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-center">
+                      <p class="fs-5">Password : <?= $data['password'] ?></p>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-center">
+                      <p class="fs-5">Role : <?= $data['role'] ?></p>
+                    </div>
                   </div>
-                  <div class="d-flex justify-content-start align-items-center">
-                    <p class="fs-5">Nama Lengkap : Sutan Pangeran Arya Dewa</p>
-                  </div>
-                  <div class="d-flex justify-content-start align-items-center">
-                    <p class="fs-5">Username : Quandle Dingle</p>
-                  </div>
-                  <div class="d-flex justify-content-start align-items-center">
-                    <p class="fs-5">Password : 123</p>
-                  </div>
-                  <div class="d-flex justify-content-start align-items-center">
-                    <p class="fs-5">Role : Guru</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-2 col">
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="../img/Maggot.jpeg" style="max-width: 450px; height: 525px" />
-                </div>
+                  <hr>
+                <?php $no++;
+                } ?>
               </div>
             </div>
           </div>
@@ -291,8 +276,7 @@
           <div class="container-fluid" style="font-family: 'Poppins', sans-serif">
             <div class="d-flex justify-content-between">
               <div class="d-flex justify-content-start">
-                <button type="button" class="btn btn-danger text-center me-2" data-bs-toggle="modal"
-                  data-bs-target="#hapusModal">Hapus</button>
+                <button type="button" class="btn btn-danger text-center me-2" data-bs-toggle="modal" data-bs-target="#hapusModal">Hapus</button>
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ubahModal">
                   Ubah</button>
               </div>
@@ -315,24 +299,30 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form action="" method="get">
+          <form action="act_register.php" method="POST">
             <div class="input-group mb-3">
-              <input type="text" name="" class="form-control" placeholder="Nama Lengkap" aria-label="Username"
-                aria-describedby="basic-addon1" style="font-family: 'Lato', sans-serif;">
+              <input type="text" name="nama_lengkap" class="form-control" placeholder="Nama Lengkap" aria-label="Username" aria-describedby="basic-addon1" style="font-family: 'Lato', sans-serif;">
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" name="username" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" style="font-family: 'Lato', sans-serif;">
             </div>
             <div style="font-family: 'Lato', sans-serif;">
               <div class="input-group mb-3">
-                <input type="text" name="" class="form-control" placeholder="Username" aria-label="Username"
-                  aria-describedby="basic-addon1">
+                <input type="text" name="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
               </div>
               <div class="input-group mb-3">
-                <input type="text" name="" class="form-control" placeholder="Password" aria-label="Username"
-                  aria-describedby="basic-addon1">
+                <label class="form-label"></label>
+                <select class="form-control" name="role" required>
+                  <option value="">Pilih Role</option>
+                  <option value="Admin">Admin</option>
+                  <option value="Users">Users</option>
+                  <option value="BK">BK</option>
+                </select>
               </div>
-              <div class="input-group">
+              <!-- <div class="input-group">
                 <input type="file" name="" class="form-control" id="inputGroupFile04"
                   aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-              </div>
+              </div> -->
             </div>
             <div class="modal-footer">
               <div style="font-family: 'Poppins', sans-serif;">
@@ -359,9 +349,8 @@
         </div>
         <div class="modal-body" style="font-family: 'Lato', sans-serif">Yakin ingin keluar?</div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-            style="font-family: 'Poppins', sans-serif">Tidak</button>
-          <a href="../index.html">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="font-family: 'Poppins', sans-serif">Tidak</button>
+          <a href="/index.php">
             <a href="">
               <button type="button" class="btn btn-primary" style="font-family: 'Poppins', sans-serif">iya</button>
             </a>
@@ -386,8 +375,7 @@
           Hapus Users Quandle Dingle?
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-            style="font-family: 'Poppins', sans-serif;">Tidak</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="font-family: 'Poppins', sans-serif;">Tidak</button>
           <a href="">
             <button type="submit" class="btn btn-primary" style="font-family: 'Poppins', sans-serif;">Iya</button>
           </a>
@@ -410,21 +398,17 @@
           <form action="" method="get">
             <div style="font-family: 'Lato', sans-serif;">
               <div class="input-group mb-3">
-                <input type="text" name="" class="form-control" placeholder="Nama Lengkap" aria-label="Username"
-                  aria-describedby="basic-addon1">
+                <input type="text" name="" class="form-control" placeholder="Nama Lengkap" aria-label="Username" aria-describedby="basic-addon1">
               </div>
 
               <div class="input-group mb-3">
-                <input type="text" name="" class="form-control" placeholder="Username" aria-label="Username"
-                  aria-describedby="basic-addon1">
+                <input type="text" name="" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
               </div>
               <div class="input-group mb-3">
-                <input type="text" name="" class="form-control" placeholder="Password" aria-label="Username"
-                  aria-describedby="basic-addon1">
+                <input type="text" name="" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
               </div>
               <div class="input-group">
-                <input type="file" name="" class="form-control" id="inputGroupFile04"
-                  aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                <input type="file" name="" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
               </div>
               <div class="modal-footer">
                 <a href="">
@@ -442,7 +426,6 @@
   </div>
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
 </html>
